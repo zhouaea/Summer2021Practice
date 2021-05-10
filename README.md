@@ -1,5 +1,4 @@
 # Summer2021Practice
-# Summer2021Practice
 
 Skills to improve over the summer:
 - [ ] Git
