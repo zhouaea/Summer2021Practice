@@ -8,3 +8,4 @@ Skills to improve over the summer:
 - [ ] Writing large codebases
 - [ ] Google Sheets
 - [ ] Google Sheets Scripts
+- [ ] Macros
