@@ -2,8 +2,8 @@
 
 Skills to improve over the summer:
 - [ ] Git
+- [ ] Unix commands
 - [ ] Shell code
-- [ ] Unix commands for networking
 - [ ] Understanding large codebases
 - [ ] Writing large codebases
 - [ ] Google Sheets
