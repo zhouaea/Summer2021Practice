@@ -1,0 +1,51 @@
+# Version Control by Example Part 1: Centralized Version Control
+### What is version control?
+A system that enables 3 things:
+1. Developers can work on different files at the same time 
+2. Developers can work on the same file without issues
+3. Developers can store a history of who did what when and why
+
+**filesystem**:  A tree structure of folders and files
+**repository**:  filesystem x time; contains every version of every file and and folder that ever existed in the filesystem’s lifetime
+**create**: Creates a new repository in a given location with a specific name
+
+**working copy**: A snapshot of the repository that a developer can work on to make changes
+**checkout**: Create a working copy of the repository
+**administrative area**: hidden files in the working copy that store metadata like what version the working copy took a snapshot of or the time that each file was modified at
+
+**pending changeset**: A set of changes that will update the repository when committed
+**commit**: Updating the repository to match the working copy
+**log message**: Used with a commit to explain why changes were made
+
+**parent of working copy**: The version of the repository that the working copy copied from
+**update**: Applies changes from the repository to the working copy, updating the parent of the working copy
+
+**add**: add a command to the pending changeset to add/edit a file to the filesystem
+
+**edit**: This is usually detected automatically by the VCS. With some VCS you have to explicitly tell the computer which file you want to modify.
+
+ **delete**: add a command in the pending changeset to delete a file in the repository once committed (not really deleted, a new filesystem is created that does not have the file)
+
+**rename**: add a command in the pending changeset to rename a file in the repository once committed (nontrivial implementation)
+
+**move**: add a command in the pending changeset to move a file in the repository to another folder
+
+**status**: shows commands in pending changeset (what changes would be applied to repository if committed)
+
+**diff**: show the changes that have been made to a file comparing parent snapshot and working copy
+
+**revert**:  undo modifications and revert state back to parent snapshot
+
+**log**: shows every committed changeset; who made the change, when it was made, and why
+
+**tag**: associate a name with a specific version of the repository
+
+**branch**: create a new version of the local repo for separate development 
+
+**merge**:  copy nonconflicting changes from one branch to another automatically
+
+**resolve**: used after a failed merge, all conflicting changes are marked and the user deals with them manually, typing resolve when finished
+
+**lock**: Prevent anyone else from modifying a file
+
+#VCBE

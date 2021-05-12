@@ -1,0 +1,12 @@
+# Version Control by Example Part 4: Best Practices
+1. Review changes with diff often.
+	- Right before you commit
+	- Right after you pull changes
+2. Make clean and descriptive commits
+	- Do a commit for every single task; never have multiple tasks in one commit
+	- Explain commits completely, don’t just say “bug fix” or “minor change”
+	- Tag important commits so it is easy to come back to them later
+3. Don’t comment out code
+	1. You can just go back to a previous version history if you want to come back to a section of code later
+
+#VCBE

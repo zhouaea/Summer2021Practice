@@ -1,0 +1,29 @@
+# Version Control by Example Part 3: Git
+**git init**: create a new git repository
+
+**.gitconfig**: stores name and username that will be used to label commits
+
+**git clone**: create a copy of a remote git repository and create a working copy of the new cloned repository
+
+**git staging area**: a pending changeset that can contain commands that have not been executed in the working copy
+**git add**: put an add/edit command in the git staging area
+
+**git status**: shows pending commands in git staging area
+**git status -s**: shows pending commands in git staging area in short manner
+**??**: output of git status -s; git does not know what to do with the file and it is not in the git staging area
+
+**git commit**: execute commands in git staging area into local repository
+**git commit -a**: add all modified files into git staging area as edit commands and then execute them in local repository
+
+**git push**: copy changes of a local repository’s branch into a matching remote repository branch
+**git push —all**: copy changes of each branch in the local repository into corresponding branches in the remote repository
+
+**git fetch**: copy changes made in the remote repo into the local repo, but do not update the working copy
+**git update**: update working copy with changes in the local repository; git pull does this automatically
+**git pull**: copy the commits of a remote repository into the local repository and update the working copy 
+
+**git log**: show all commits of local repo 
+
+**git commit —amend**: add commands to the last commit
+
+#VCBE

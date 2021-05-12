@@ -1,0 +1,35 @@
+# Version Control by Example Part 2: Decentralized Version Control
+The decentralized system involves a central repository and a local repository that push and pull changes from one another
+
+**repository instance**: copy of the repository
+
+**clone**: create a new repository instance that is the copy of another repository
+
+**push**: copy changes from a local repository instance to a remote repository; can choose what changes to copy with
+
+**pull**: copy changesets from a remote repository to a local repository instance; can choose what changes to copy from
+
+**What is the problem with linear version modeling?**: you can only commit a new version if it was based on the latest version; you have to blend new updates to your update that was made for a previous version, which may not work well
+
+**nodes**: In DVCS, each node represents one revision of the repository  
+**directed edge**: A repository revision points to the repository revision it revised
+**root node**: The repository at its creation
+**leaf nodes**: A repository revision that has no revisions after it
+**direct acyclic graph**: graph with one way edges that do not form a cycle; used to represent distributed version revisions
+
+**What is the problem with direct acyclic graph modeling?**: It is flexible but can be incredibly confusing since there can be multiple leaf nodes
+
+**rebase**: When pushing updates for a different revision then the remote repository’s revision, we can change the changesets so that they update a different revision (rewrites DAG history as a line)
+
+**What are three advantages of distributed version control?**:
+(1) More flexible communication overhead; commits can be made without coordination
+(2) Horizontal scaling and fault tolerance; different servers can contain different parts of a very large repo and every computer has a “backup copy”
+(3)  Easier to merge than previous implementations of version control (see page 55)
+
+**What are three disadvantages of distributed version control?**:
+(1) Steeper learning curve, added flexibility creates more mechanisms that can be confusing to learn
+(2) No path based access control; a repo is either all public or all private
+(3)  Can not handle very large repositories that can not be sharded
+
+#VCBE
+
