@@ -14,4 +14,4 @@ Skills to improve over the summer:
 - [ ] Google Sheets
 - [ ] Google Sheets Scripts
 - [ ] Macros
-- [ ] Basic Scientific Computing
+- [ ] Basic Data Visualization
